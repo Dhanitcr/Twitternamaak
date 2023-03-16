@@ -1,39 +1,51 @@
 body{
-
+    margin: 0 !important;
+    padding: 0 !important;
 }
+
 ul {
+    height: auto;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: rgb(29, 155, 240);
+}
 
+ul p{
+    float: left;
+    padding: 5px;
 }
 
 li {
-    float: left;
+display: inline;
+    float: right;
 }
 
 li a {
     display: block;
     color: white;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 1em;
 }
 
 li a:hover {
-    background-color: deepskyblue;
+    background-color: cornflowerblue;
 }
 
 .active {
-    background-color: black;
+    background-color: rgb(29, 155, 240);
 }
 .Tweets{
     height: 95vh;
     width: 500px;
-    background-color: black;
+    background-color: rgb(29, 155, 240);
+    margin-top: 25px;
+    margin-bottom: 25px;
     margin-left: 500px;
     border-radius: 15px;
+    padding: 5px;
 }
 #wittekst{
     color: white;
@@ -62,14 +74,14 @@ input[type=password], select {
 
 input[type=submit] {
     width: 100%;
-    background-color: deepskyblue;
+    background-color: rgb(29, 155, 240);
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
-    border: none;
+    border: solid white;
     border-radius: 4px;
     cursor: pointer;
 }
 
 input[type=submit]:hover {
-    background-color: grey;}
+    background-color: deepskyblue;}
