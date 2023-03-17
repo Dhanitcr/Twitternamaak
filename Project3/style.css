@@ -85,10 +85,8 @@ input[type=submit] {
 
 
 input[type=submit]:hover {
-<<<<<<< HEAD
-    background-color: deepskyblue;}
-=======
-    background-color: grey;}
+    background-color: deepskyblue;
+}
 
 input[type=email], select {
     width: 100%;
@@ -99,4 +97,4 @@ input[type=email], select {
     border-radius: 4px;
     box-sizing: border-box;
 }
->>>>>>> master
+
