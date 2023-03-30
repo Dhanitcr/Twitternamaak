@@ -2,45 +2,85 @@ body{
     margin: 0 !important;
     padding: 0 !important;
 }
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("img_4.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-ul {
-    height: auto;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(29, 155, 240);
 }
 
-ul p{
-    float: left;
-    padding: 5px;
+.navbar{
+    width: 100%;
+    height: 5px;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
-li {
-display: inline;
-    float: right;
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
 }
 
-li a {
-    display: block;
-    color: white;
-    padding: 14px 16px;
+.navbar ul li a{
     text-decoration: none;
-    font-size: 1em;
+    color: white;
+    text-transform: uppercase;
 }
 
-li a:hover {
-    background-color: cornflowerblue;
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #4ACAC1;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
 }
 
-.active {
-    background-color: rgb(29, 155, 240);
+.navbar ul li:hover::after{
+    width: 100%;
 }
+
+#logo{
+    width: 75px;
+    cursor: pointer;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+
 .Tweets{
     height: 95vh;
     width: 500px;
-    background-color: rgb(29, 155, 240);
+    background-color: #4ACAC1;
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: 500px;
@@ -50,7 +90,7 @@ li a:hover {
 #wittekst{
     color: white;
     text-align: center;
-    font-family: Arial;
+
     margin-top: 20px;
 }
 input[type=text], select {
@@ -85,8 +125,12 @@ input[type=submit] {
 
 
 input[type=submit]:hover {
+<<<<<<< Updated upstream
     background-color: deepskyblue;
 }
+=======
+    background-color: deepskyblue;}
+>>>>>>> Stashed changes
 
 input[type=email], select {
     width: 100%;
@@ -98,3 +142,15 @@ input[type=email], select {
     box-sizing: border-box;
 }
 
+<<<<<<< Updated upstream
+=======
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+>>>>>>> Stashed changes
