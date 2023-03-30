@@ -128,9 +128,7 @@ input[type=submit]:hover {
 <<<<<<< Updated upstream
     background-color: deepskyblue;
 }
-=======
-    background-color: deepskyblue;}
->>>>>>> Stashed changes
+
 
 input[type=email], select {
     width: 100%;
@@ -142,8 +140,7 @@ input[type=email], select {
     box-sizing: border-box;
 }
 
-<<<<<<< Updated upstream
-=======
+
 input[type=email], select {
     width: 100%;
     padding: 12px 20px;
@@ -153,4 +150,4 @@ input[type=email], select {
     border-radius: 4px;
     box-sizing: border-box;
 }
->>>>>>> Stashed changes
+
