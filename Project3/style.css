@@ -90,8 +90,8 @@ body{
 #wittekst{
     color: white;
     text-align: center;
-
     margin-top: 20px;
+
 }
 input[type=text], select {
     width: 100%;
@@ -149,3 +149,11 @@ input[type=email], select {
     box-sizing: border-box;
 }
 
+.berichten{
+    padding: 10px;
+    width: 800px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}

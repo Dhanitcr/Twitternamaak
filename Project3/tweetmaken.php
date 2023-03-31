@@ -6,7 +6,7 @@
 
     <meta charset="utf-8">
 
-    <title>Chirpify</title>
+    <title>Chirpify | Tweets maken</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
