@@ -18,7 +18,7 @@
 
 <div class="Tweets">
     <form method="POST">
-        <input type="text" name="username" placeholder="Gebruikersnaam..">
+        <input type="text" name="username" placeholder="Gebruikersnaam.." autofocus>
         <input type="text" name="content" placeholder="Verstuur een tweet..">
         <br>
 
@@ -26,32 +26,34 @@
 </div>
 
 
-
 </body>
 
 </html>
 
+
 <?php
+
 
 error_reporting(E_ALL);
 ini_set('display_errors', 'On');
 
-if(isset($_POST["content"])){
+if (isset($_POST["content"])) {
     $servername = "localhost";
     $username = "root";
     $password = "root";
-
     try {
         $conn = new PDO("mysql:host=$servername;dbname=twitter", $username, $password);
-        // set the PDO error mode to exception
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         echo "Connected successfully";
-    } catch(PDOException $e) {
+    }catch (PDOException $e) {
         echo "Connection failed: " . $e->getMessage();
     }
-
-    $x = $conn->prepare("INSERT INTO tweets (content, username)
-                    VALUES('{$_POST["content"]}', '{$_POST["username"]}')");
-
-    $x->execute();
 }
+
+
+$tweet_maken = $conn->prepare("INSERT INTO tweets (content, username) VALUES (:content, :username)");
+$tweet_maken->bindParam(":content", $_POST['content']);
+$tweet_maken->bindParam(":username", $_POST['username']);
+$tweet_maken->execute();
+
+

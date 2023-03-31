@@ -17,7 +17,6 @@
 
     $x->execute();
     $data = $x->fetchAll(PDO::FETCH_ASSOC);
-    var_dump($data);
 
     foreach ($data as $tweet){
         echo "<p>" . $tweet["username"] . "</p>";
