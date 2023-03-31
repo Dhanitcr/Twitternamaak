@@ -18,7 +18,7 @@
 
 <div class="Tweets">
     <form method="POST">
-        <input type="text" name="username" placeholder="Gebruikersnaam.." autofocus>
+        < type="text" name="username" placeholder="Gebruikersnaam.." autofocus>
         <input type="text" name="content" placeholder="Verstuur een tweet..">
         <br>
 
