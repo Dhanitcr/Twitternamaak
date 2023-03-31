@@ -125,7 +125,6 @@ input[type=submit] {
 
 
 input[type=submit]:hover {
-<<<<<<< Updated upstream
     background-color: deepskyblue;
 }
 
@@ -139,7 +138,6 @@ input[type=email], select {
     border-radius: 4px;
     box-sizing: border-box;
 }
-
 
 input[type=email], select {
     width: 100%;
