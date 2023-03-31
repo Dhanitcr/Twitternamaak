@@ -12,8 +12,10 @@
 
 <body id="wittekst">
 <ul>
-    <li style="float:right"><a class="active" href="Inloggens.html">Inloggen</a></li>
-    <li style="float:right"><a class="active" href="Accountmaken.html">Account aanmaken</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Inloggens.html">Aanmelden</a></li>
+    <li><a href="Accountmaken.html">Account aanmaken</a></li>
+    <li><a href="tweets.php">Tweets</a></li>
 </ul>
 
 <div class="Tweets">
